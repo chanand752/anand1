@@ -1,0 +1,42 @@
+.bg{
+    background-image: url("https://images.miraclesoft.com/mss/images/Miracle-Me/miracle-me-large.png");
+    height: 750px;
+    background-size: cover;
+    text-align: center;
+    align-items: center;
+    flex-direction: center
+    ;
+}
+
+.heading{
+    color: rgb(17, 9, 129);
+    font-size: 50px;
+    font-weight: bold;
+}
+
+
+.color{
+    color:rgba(0, 255, 76, 0.918);
+    font-size: 25px;
+}
+
+.button{
+    background-color:green;
+    color: #FFFFFF;
+    font-size: 20px;
+    border-radius: 10px;
+    height: 30px;
+    margin-right: 10px;
+    text-align: center;
+    }
+    
+    .button1{
+    background-color: red;
+    color: #FFFFFF;
+    font-size: 20px;
+    border-radius: 10px;
+    height: 30px;
+    width: 75px;
+    margin-left: 10px;
+    text-align: center;
+    }

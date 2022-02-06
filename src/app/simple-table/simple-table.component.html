@@ -1,0 +1,75 @@
+<p>Today Tasks 20/01/2022</p>
+
+
+<table id = a1>
+    <tr >
+        <td >Person1</td>
+            <td>Person2</td>
+                <td>Person3</td>
+                            
+    </tr>
+    <!-- BIND ARRAY TO TABLE -->
+    <!-- <tr *ngFor="let val of parameter; let i = index">    -->
+
+  <td  *ngFor="let obj of data1">{{obj.name1 }} <br>, {{obj.age }} <br>,{{obj.place}}</td>
+ 
+  <!-- <td *ngFor="let obj of data1">{{obj.age | json}}</td>
+  <td *ngFor="let obj of data1">{{obj.place | json}}</td> -->
+           
+</table>
+
+<br>
+
+
+
+
+<div *ngIf = "names">
+    {{names}} <br>
+</div>
+
+<!-- <div *ngIf= "names" >
+    <div [ngStyle]="{'color': names === 'Anand Babu' ? 'green' : 'red' }"></div>
+</div> -->
+    
+
+<div [ngStyle]="{'color':'green'}"> Hai Anand How Are You ? <div>
+
+    <!-- <div [ngStyle]="{'background-color': "names === Anand Babu" ? 'red' : (style2 ? 'blue' : null) }"></div> -->
+<!-- 
+    <p [ngStyle]="{ 'color': names === 'Anand Babu' ? 'red' : 'green' }"></p> -->
+
+
+<h2 [ngStyle] ="{'color': names[0] === 'Anand Babu'? 'red' : 'green'}">{{names[0]}}</h2>
+
+
+<div [ngClass]="'one'">ngClass</div>
+
+<div [ngClass]= "{'one1': names[0] === 'Anand Babu' ? 'green' : 'red'}">{{names[0]}}</div>
+
+<p>pipes works!</p>
+<h1>  
+    {{ title | uppercase }} <br/></h1>  
+ <h1>  
+   {{ title | lowercase }} <br/></h1>  
+   {{title| titlecase}}
+
+   <b>{{todaydate | date:'d/M/y'}}</b><br/>  
+    <b>{{todaydate | date:'shortTime'}}</b>
+    <br> 
+    <b>{{months | slice:2:6}}</b> 
+    <br>
+    <b>{{6589.23 | currency:"INR"}}</b><br/>  
+    <b>{{6589.23 | currency:"USD":true}}
+<br>
+        <b>{{ 454.78787814 | number: '3.4-4' }}
+
+            <br>
+          <h1>  {{person|json}}</h1>
+
+          <h2> {{0.25| percent}}</h2>
+
+          <!-- <h2>{{30| customPipe}}</h2> -->
+
+    
+
+       

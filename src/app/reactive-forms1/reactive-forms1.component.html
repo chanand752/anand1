@@ -1,0 +1,31 @@
+<p>reactive-forms1 works!</p>
+
+
+
+<p>forms works!</p>
+
+<form [formGroup]="employee_details" >
+    <label>employeeName:</label>
+
+    <input type="text" formControlName="employee_name"><br><br>
+ <label>salary:</label>
+    <input type="text" formControlName= "salary"><br><br>
+
+    <label>education_details:</label>
+    <select  formControlName="qualification">
+        <option value="1">10th</option>
+        <option value="2">inter</option>
+        <option value="3">btech</option>
+        </select><br><br>
+        <label>email:</label>
+        <input type="text" formControlName= "email"><br><br> 
+        
+
+        <label>password:</label>
+        <input type="text" formControlName= "password"><br><br> 
+
+
+    <button (click)="onclick()" [disabled]="!employee_details.valid"> clickme</button>
+    <button (click)="reset()"> reset</button>
+
+    </form>

@@ -1,0 +1,24 @@
+
+#a1,th,td {
+    border: 2px solid black;
+}
+
+
+  .one{
+    color:yellow;
+    background-color:grey;
+    font-size: 30px;
+    padding: 15px;
+    margin-top: 15px ;
+
+  }
+  
+  
+  .one1{
+    color: greenyellow;
+    background-color:rgb(39, 182, 201);
+    font-size: 45px;
+    font-weight: 20px;
+    padding: 15px;
+    margin-top: 15px ;
+  }

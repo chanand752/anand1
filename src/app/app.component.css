@@ -1,0 +1,19 @@
+h1{
+    color: blue;
+    font-size: 45px;
+    text-align: center;
+}
+
+#a1,th,td {
+    border: 2px solid black;
+}
+th {
+    font-size: 40px;
+    color: green;
+
+}
+
+td {
+    font-size: 30px;
+    color: red;
+}

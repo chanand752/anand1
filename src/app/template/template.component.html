@@ -1,0 +1,23 @@
+<!-- <head><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head> -->
+
+<p>template works!</p>
+
+<p>template-driven works!</p>
+<form #loginform="ngForm"(submit)="login(loginform)">
+    <label>FirstName</label>
+    <input type="text" [(ngModel)]= "firstName" name="firstName" required><br><br>
+    <input type="text" [(ngModel)]= "lastName" name="lastName" required><br><br>
+    <input type="text" [(ngModel)]= "email" name="email" required>
+    <select [(ngModel)]="qualification" name="qualification" required>
+        <option selected value="1">10th</option>
+        <option value="2">inter</option>
+        <option value="3">btech</option>
+        </select>
+    <button class= "btn-primary" type="submit" [disabled]="!loginform.valid">clickme </button>
+    </form>
+    <div> {{firstName}}</div>
+    <div> {{lastName}}</div>
+    <div> {{email}}</div>
+
+    <button class=" btn-primary mt-5">  Select </button>
